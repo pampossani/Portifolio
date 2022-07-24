@@ -1,1 +1,45 @@
-CONTATO
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href ="index.css">
+
+</head>
+
+<body>
+
+    <div> <!-- Metodo GET: dados são passados pela URL; POST dados são passados pela requisição-->
+        <form enctype="application/x-www-form-urlencoded" method="POST">
+            <label for="NomeCompleto">Nome:</label>
+            <input id="NomeCompleto" type="text" name="Nome_Completo" value="" placeholder="Digite seu nome completo" />
+            <br>
+            
+            <label for="Email">E-mail:</label>
+            <input id="Email" type="email" name="Email" value="" placeholder="seuemail@servidor.com.br" />
+            <br>
+
+            <label for="Assunto">Mensagem:</label>
+            <textarea name="Assunto"> </textarea>
+             <br>
+             <input type="submit" value="Enviar!" />
+             <br>
+      
+        </form>
+   
+    </div>
+<div>
+    Informações de Contato
+    <address>
+        Brasil, Jundiaí-SP
+        <br>
+        13212-108
+        <br>
+        Avenida Antonio Pincinato
+    </address>
+</div>
+
+</body>
+</html>
