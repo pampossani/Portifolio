@@ -1,6 +1,5 @@
 body {
     background-color: rgb(80, 32, 42);
-  
     color:white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -42,6 +41,13 @@ footer img {
 
 h1{
     color: palevioletred;
+    text-shadow:rgb(146, 61, 87)
+
+}
+
+h2{
+    text-shadow:rgb(182, 182, 182)
+
 }
 
 footer{
