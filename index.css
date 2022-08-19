@@ -16,10 +16,12 @@ ul {
 a {
     color:rgb(187, 48, 106);
     text-decoration: none;
+    -webkit-transition: all 0.25s;
 }
 
 a:hover {
     color:rgb(146, 61, 87);
+    -webkit-transition: all 0.25s;
 }
 
 header img {
