@@ -72,6 +72,7 @@ footer p{
 nav a:hover{
     color:rgb(173, 173, 173);
     -webkit-transition: all 0.25s;
+    -webkit-text-stroke: 1px red;
 }
 
 form {
