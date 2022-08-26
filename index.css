@@ -1,3 +1,13 @@
+/*************************************************
+*	Corpo, links e cabeçalhos  *
+*************************************************/
+header img { /*imagem do cabeçalho*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+ border: 5px solid pink;
+}
+
 body {
     background-color: rgb(80, 32, 42);
     color:white;
@@ -16,35 +26,19 @@ li {
     margin:0 auto; /* centralizar*/
 } 
 
-a {
+a { /* link normal*/
     color:rgb(187, 48, 106);
     text-decoration: none;
     text-align: center;
     -webkit-transition: all 0.25s;
 }
 
-a:hover {
+a:hover { /*link selecionado*/
     color:rgb(146, 61, 87);
     -webkit-transition: all 0.25s;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
- border: 5px solid pink;
-}
 
-footer img {
-    width: 40px;
-    height: 40px;
-}
-
-
-
-.center{
-    text-align: center;
-}
 
 h1{
     color: palevioletred;
@@ -53,7 +47,28 @@ h1{
 
 h2{
     text-shadow: 2px 2px rgb(116, 116, 116);
+}
 
+.center{
+    text-align: center;
+}
+                               
+nav a.botao {
+    margin-left: 25px;
+}
+
+nav a:hover{
+    color:rgb(160, 160, 160);
+    -webkit-transition: all 0.25s;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+/*************************************************
+*	Rodapé  *
+*************************************************/
+footer img { /*imagem do rodapé */
+    width: 40px;
+    height: 40px;
 }
 
 footer{
@@ -79,10 +94,6 @@ footer p{
     width: 100%;
     margin: 0 auto;
 }
-                                
-nav a.botao {
-    margin-left: 25px;
-}
 
 .botao {
     background-color: rgb(192, 91, 125);
@@ -99,18 +110,21 @@ nav a.botao {
 }
 
 
-nav a:hover{
-    color:rgb(160, 160, 160);
-    -webkit-transition: all 0.25s;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-}
+
+/*************************************************
+*	Formulário de Resposta  *
+*************************************************/
 
 form {
     text-align: center; 
     display:block;
 }
 
-blockquote  {
+/*************************************************
+*	Bloco de frase - Blockquote  *
+*************************************************/
+
+    blockquote  {
         font-size: 1.4em;
         width: 75%;
         margin: 50px auto;
@@ -121,7 +135,65 @@ blockquote  {
         border-left: none;
         line-height: 1.2;
         position: relative;
-        background: none;
-        }
+        background:none;
+                }
     
+      blockquote:before { /* o que vem antes do blockquote, o comma */
+        content: "\201C"; /*Unicode for Left Double Quote*/
+        /*Font*/
+        font-family: Droid sans-serif;
+        font-size: 80px;
+        font-weight: bold;
+        color: rgb(192, 91, 125);
+        /*Positioning*/
+        position:absolute;
+        left: -50px;
+        top: -15px;   }
 
+        /*citação do blockquote*/
+        blockquote citacao {
+            color: #999999;
+            font-size: 14px;
+            display: block;
+            margin-top: 5px;
+            }
+
+            blockquote citacao:before {
+                content: "\2014 \2009";
+            }
+/*************************************************
+*	Responsivo  modo Celular  *
+*************************************************/
+
+@media only screen and (max-width: 767px) {	
+	.container  {
+		width:320px;
+        margin-left: 20px;
+    }
+	
+	 nav ul li .botao { /*botoes */
+		float:none;
+        width: 100%;
+        display: table-cell;
+     /*   margin-left: 25px;
+        display:table-cell;*/
+        vertical-align: center;
+        line-height: 1em;
+        }     
+
+	footer {
+        width: 100%;
+    }	
+
+    .secao1{
+        float: none;
+        width: 100%;
+    }
+
+    header img {
+        margin-left: 10px;
+    }
+
+    
+  
+                                            }
