@@ -42,11 +42,11 @@ a:hover { /*link selecionado*/
 
 h1{
     color: palevioletred;
-    text-shadow: 2px 2px rgb(77, 25, 42); 
+    text-shadow: 2px 2px rgb(100, 47, 65); 
 }
 
 h2{
-    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-shadow: 2px 2px rgb(70, 70, 70);
 }
 
 .center{
@@ -168,19 +168,17 @@ form {
 @media only screen and (max-width: 767px) {	
 	.container  {
 		width:320px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 	
 	 nav ul li .botao { /*botoes */
 		float:none;
         width: 100%;
         display: table-cell;
-     /*   margin-left: 25px;
-        display:table-cell;*/
         vertical-align: center;
         line-height: 1em;
         margin:0 auto; /* centralizar*/
-    
+        padding-bottom: 10px ;
         }     
 
 	footer {
