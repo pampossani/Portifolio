@@ -79,7 +79,7 @@ label {
     display: inline-block;
     width: 100px;
     text-align: right;
-    padding: 0em 1em 0.4em 0em;
+    padding: 0 1em 0.4em 0.4em;
 }
 
 input, textarea {
@@ -92,7 +92,17 @@ input, textarea {
 
 textarea {
     vertical-align: top;
+    height: 8em;
+    resize: vertical;
 }
+
+.enviar {
+    padding-left: 100px; /* mesmo tamanho do label */
+  }
+
+enviar {
+    margin-left: .5em; /*espaço entre label e campo*/
+  }
 
 input:focus, textarea:focus { /*focar áreas quando estiverem ativas*/
     border-color: rgb(129, 14, 71);
