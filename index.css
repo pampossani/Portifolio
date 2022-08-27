@@ -63,6 +63,32 @@ nav a:hover{
     -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
 
+
+/*************************************************
+*	Parte de Contato  *
+*************************************************/
+
+.metade {
+    width: 50%;
+    height: 300px; /* altura da caixa*/
+    display: flex;
+    line-height: 150%;
+    padding: 0px 100px;
+    margin: 0 auto;
+}
+
+.metade img {
+    width: 40px;
+  
+}
+
+.metade label {
+    width: 50%;
+    display: inline-block;
+    vertical-align: left;
+}
+
+
 /*************************************************
 *	Rodapé  *
 *************************************************/
@@ -76,6 +102,14 @@ footer{
     justify-content: center;
     /*background-color: rgb(78, 28, 43); */
 }
+
+
+footercontato{
+    display:block; /* para deixar um do lado do outro*/
+
+    /*background-color: rgb(78, 28, 43); */
+}
+
 
 footer a{
     margin: 20px; /*0 auto é onde fica centralizado também*/

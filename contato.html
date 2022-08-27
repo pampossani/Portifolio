@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Contato - Portifólio da Pâm</title>
     <link rel="stylesheet" href ="index.css">
-
+    <link href="imagem/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 
 <body>
-<h1> Contato</h1>
-    <div> <!-- Metodo GET: dados são passados pela URL; POST dados são passados pela requisição-->
+<h1> <center>Formulário de Contato - Portifólio da Pâm</center></h1>
+    <div class="metade"> 
+        <!-- Metodo GET: dados são passados pela URL; POST dados são passados pela requisição-->
         <form enctype="application/x-www-form-urlencoded" method="POST">
             <label for="NomeCompleto">Nome:</label>
             <input id="NomeCompleto" type="text" name="Nome_Completo" value="" placeholder="Digite seu nome completo" />
@@ -26,26 +27,39 @@
              <br>
              <input type="submit" value="Enviar!" />
              <br>
-      
         </form>
-        <li>
-            <a alt ="Sobre a autora" class ="botao" href="index.html">Voltar</a>
-        </li>
-    </div>
-<div>
-    <div>
-        Telefone: (11) 3333-3333
-        Redes Sociais:(Facebook - Instagram - Linkedin)
-    </div>
-    Informações de Contato
-    <address>
-        Brasil, Jundiaí-SP
-        <br>
-        13212-108
-        <br>
-        Avenida Antonio Pincinato
-    </address>
-</div>
+ 
+   
+        Informações de Contato<br>
+        Telefone: (11) 3333-3333<br>
+        Redes Sociais:   
+        <a href="https://www.facebook.com/interruptedreamer" target="_blank" rel="noopener noreferrer">
+            <img src="./imagem/facebook.svg"></img></a> 
+            <a href="https://www.instagram.com/interruptedreamer/" target="_blank" rel="noopener noreferrer">
+                <img src="./imagem/instagram.svg"> </img></a> 
+                <a href="https://www.linkedin.com/in/p%C3%A2mela-possani-7929b16b/" target="_blank" rel="noopener noreferrer">
+                <img src="./imagem/linkedin.svg"> </img> </a>   
+      </div>
+      
+      </center>
+      <footercontato> 
+       <!-- /* botao de voltar para a pagina inicial*/ -->
+       <center><address>
+        Brasil, Jundiaí-SP<br>
+        13212-108<br>
+        Avenida Antonio Pincinato<br>
+      </address> </center>
+      <footercontato>
+        <ul>
+            <li>
+            <a alt ="Voltar a pagina inicial" class ="botao" href="index.html">Página Inicial</a>
+        </li> 
+        </ul>
 
+      <center><br>Todos os direitos reservados - 2022 - Hospedado em GitHub - Elas na Tech</center>
+      </footercontato>
 </body>
+
+    
+
 </html>
