@@ -82,27 +82,26 @@ label {
     padding: 0 1em 0.4em 0.4em;
 }
 
-input, textarea {
+input[type=text], input[type=email], textarea {
      font: 1em sans-serif; /*tiramos a serifa do formulário também */
      width: 250px;
      font-size: 15px; /* tamanho da fonte*/
      box-sizing:border-box;
-     border: 1px solid #999; /*borda em volta das áreas*/
+     border: 1px dotted #999; /*borda em volta das áreas*/
 }
 
 textarea {
     vertical-align: top;
     height: 8em;
     resize: vertical;
+    max-height: 14em;
 }
 
-.enviar {
-    padding-left: 100px; /* mesmo tamanho do label */
-  }
+input[type=submit]{ 
+       margin-left: 9em; /*espaço entre label e campo*/
+       padding-top:.1em;
+}
 
-enviar {
-    margin-left: .5em; /*espaço entre label e campo*/
-  }
 
 input:focus, textarea:focus { /*focar áreas quando estiverem ativas*/
     border-color: rgb(129, 14, 71);
@@ -247,6 +246,7 @@ footer p{
         line-height: 1em;
         margin:0 auto; /* centralizar*/
         padding-bottom: 10px ;
+        padding: -1em;
         }     
 
 	footer {
