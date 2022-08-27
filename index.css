@@ -269,6 +269,8 @@ footer p{
 
     .metade {
         display: table-cell;
+        align-content: center;
+        padding-left: 1em;
     }
 
     
