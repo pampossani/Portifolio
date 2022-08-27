@@ -65,11 +65,42 @@ nav a:hover{
 
 
 /*************************************************
-*	Parte de Contato  *
+*	Formulário de Resposta - parte de contato  *
 *************************************************/
 
+form {
+    text-align: center; 
+    display: table-row;
+    line-height: 170%;
+    margin-top: 0.5em;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding: 0em 1em 0.4em 0em;
+}
+
+input, textarea {
+     font: 1em sans-serif; /*tiramos a serifa do formulário também */
+     width: 250px;
+     font-size: 15px; /* tamanho da fonte*/
+     box-sizing:border-box;
+     border: 1px solid #999; /*borda em volta das áreas*/
+}
+
+textarea {
+    vertical-align: top;
+}
+
+input:focus, textarea:focus { /*focar áreas quando estiverem ativas*/
+    border-color: rgb(129, 14, 71);
+}
+
+
 .metade {
-    width: 50%;
+    width: 60%;
     height: 300px; /* altura da caixa*/
     display: flex;
     line-height: 150%;
@@ -82,10 +113,10 @@ nav a:hover{
   
 }
 
-.metade label {
-    width: 50%;
-    display: inline-block;
-    vertical-align: left;
+
+.informacoes {
+    width: 300px;
+    text-align: center;
 }
 
 
@@ -145,14 +176,7 @@ footer p{
 
 
 
-/*************************************************
-*	Formulário de Resposta  *
-*************************************************/
 
-form {
-    text-align: center; 
-    display:block;
-}
 
 /*************************************************
 *	Bloco de frase - Blockquote  *
