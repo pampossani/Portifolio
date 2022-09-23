@@ -1,3 +1,54 @@
+/* Constantes*/
+
+:root {
+    --rose: #50202a;
+    --gray:#cccccc;
+    --lighter: #af5c6d;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+
+
+/*************************************
+    Mudança de Tema da Página 
+**************************************/
+
+
+.btnTema{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    border: 1px dotted var(--gray);
+}
+
+.tema-claro {    
+    --bg: var(--lighter);
+    --fontColor: var(--white);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+
+.tema-escuro{
+    --bg: var(--rose);
+    --fontColor: var(--gray);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+    --bg-color: var(--rose);;
+    --primary-color: #ffbb55;
+    --text-color: #ffe5bc;
+    --filter: brightness(0.6) contrast(1.2);
+    }}
+
 /*************************************************
 *	Corpo, links e cabeçalhos  *
 *************************************************/
@@ -8,10 +59,12 @@ header img { /*imagem do cabeçalho*/
  border: 5px solid pink;
 }
 
-body {
-    background-color: rgb(80, 32, 42);
-    color:white;
+body { 
+    background-color: var(--bg);
+    color: var(--fontColor);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 3%; /* ajuste de margem no corpo da página*/
+    margin-right: 3%;
 }
 
 ul {
@@ -37,7 +90,6 @@ a:hover { /*link selecionado*/
     color:rgb(146, 61, 87);
     -webkit-transition: all 0.25s;
 }
-
 
 
 h1{
@@ -97,7 +149,7 @@ textarea {
     max-height: 14em;
 }
 
-input[type=submit]{ 
+input[type=submit], .botao{ 
        margin-left: 9em; /*espaço entre label e campo*/
        padding-top:.1em;
 }
@@ -170,20 +222,18 @@ footer p{
 }
 
 .botao , input[type=submit] {
-    background-color: rgb(192, 91, 125);
+    background-color: rgb(143, 62, 89);
     color:rgb(204, 204, 204);
     padding: 10px 20px;
     border-radius: 30px;
 }
 
-.botao:hover,  input[type=submit] {
-    background-color: rgb(170, 65, 100);
+.botao:hover, input[type=submit]:hover {
+    background-color: rgb(139, 54, 82);
     color:rgb(204, 204, 204);
     padding: 10px 20px;
     border-radius: 30px;
 }
-
-
 
 
 
