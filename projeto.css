@@ -1,5 +1,24 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Oswald:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;300;400;500;700&family=Oswald:wght@300;500;700&display=swap');
+
+:root{
+    --color-pink1:#f3cfdd;
+    --color-white:#fff;
+    --color-pink2:#F39194;
+    --color-pink3:rgb(100, 47, 65);
+    --color-pink4:rgba(243, 159, 187, 0.719);
+    --color-pink5:rgb(192, 91, 125);
+    --color-brown1:#957B75;
+    --color-brown2:#231918;
+    --color-brown3:#4B4241;
+    --color-dark1:rgb(70, 70, 70);
+    --color-dark2: #090707;
+    --color-dark3:#231918;
+    --color-dark4:#414535;
+    --color-gray1:#999999;
+    --color-gray2:#ccc;
+}
+
 * {
     margin: 0; /*distancia da margem para a tag*/
     padding: 0; /*distancia da tag para o conteudo*/
@@ -10,7 +29,7 @@
 *	Página de Projetos  *
 *************************************************/
 .corpo { 
-    background: linear-gradient(68.15deg, #4B4241 16.62%, #231918 85.61%);
+    background: linear-gradient(68.15deg, var(--color-brown3) 16.62%, var(--color-dark3) 85.61%);
     color: #f3cfdd;
     font-family: 'Oswald', sans-serif;
     margin-left: 3%; /* ajuste de margem no corpo da página*/
@@ -41,7 +60,7 @@
 }
 
 .item-menu-cabecalho:hover{
-    color:#F39194;    
+    color:var(--color-pink2);    
     -webkit-transition: all 0.25s;
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
@@ -70,7 +89,6 @@
 
 .conteudo-projetos{
     margin-bottom: 48px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +99,7 @@
 
 .conteudo-projetos-titulo{
     color: #F2E3BC;
-    text-shadow: 2.5px 2.5px  #414535;
+    text-shadow: 2.5px 2.5px var(--color-dark4);
     text-align: center;  
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -95,7 +113,7 @@
     font-size: 24px;
     color: #d6d0c2;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 2.5px 2.5px  #414535;
+    text-shadow: 2.5px 2.5px  var(--color-dark4);
     font-weight: 300;
 
 }
@@ -116,8 +134,7 @@
 }
 
 .conteudo-projeto-titulo{
-    
-    color:#414535;
+    color:var(--color-dark4);
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 10px rgba(0,0,0,0.3);
     text-align: center;
@@ -127,10 +144,8 @@
 
 .conteudo-projeto-paragrafo{
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
     font-weight: 400;
-    color:#414535;
-    padding: 5px;
+    color:var(--color-dark4);
 
 }
 
@@ -151,7 +166,7 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    color: #F39194;
+    color: var(--color-pink2);
     margin-bottom: 20px;
     margin-top:-10px
 
