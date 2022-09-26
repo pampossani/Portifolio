@@ -10,13 +10,30 @@
 </head>
 
 <body class="corpo">
-  <header class="cabecalho-pagina">
-    <img class="logo-cabecalho" src ="./imagem/pamela.gif" alt="Logo da Página">
-    <nav class="menu-cabecalho">
-      <a class="item-menu-cabecalho" href="index.html"> Página Inicial </a>
-    </nav>
 
-  </header>
+  <div class="header" id="header">
+    <button class="btn_icon_header" onclick="toggleSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </button>
+
+        <div class="logo_header">
+          <img src="imagem/logo-pp.png" class="imagem-navegacao" alt="logo icone">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button class="btn_icon_header" onclick="toggleSidebar()" alt="botao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            </button>
+            <a href="index.html">Página Inicial</a>
+            <a href="projeto.html" class="active">Projetos</a>
+            <a href="contato.html">Contato</a>
+         </div>
+   </div>
+  
+   <div class="container" id="content" onclick="closeSidebar()" tabindex="0"> 
 
   <section class="conteudo-inicial">
     <h1 class="conteudo-projetos-titulo">Projetos - Portifólio da Pâm<br>
@@ -35,7 +52,7 @@
     
   </section>
 
-  <main class="conteudo-projetos">
+  <div class="conteudo-projetos">
     
     <h2 class="conteudo-projetos-subtitulo">Nesta página você vai encontrar alguns projetos realizados.</h2>
     <section class="conteudo-projeto1">
@@ -56,11 +73,11 @@
 
     <script src="script.js"></script>
     <noscript>Necessário habilitar o JavaScript para usufruir de todas as funções da página!</noscript>
-       
+       </div>
     </main>
 </body>
 
-<footer class="rodape">
+<footer>
   <p>Todos os direitos reservados - 2022 - Hospedado em GitHub - Elas na Tech</p>
   </footer>
 </html>
