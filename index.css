@@ -1,4 +1,4 @@
-/* Constantes*/
+/* Constantes
 
 :root {
     --rose: #50202a;
@@ -11,7 +11,7 @@
 
 /*************************************
     Mudança de Tema da Página 
-**************************************/
+**************************************
 
 
 .btnTema{
@@ -60,7 +60,7 @@ header img { /*imagem do cabeçalho*/
 }
 
 body { 
-    background-color: var(--bg);
+    background: linear-gradient(68.15deg, #618985 16.62%, #414535 85.61%);
     color: var(--fontColor);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 3%; /* ajuste de margem no corpo da página*/

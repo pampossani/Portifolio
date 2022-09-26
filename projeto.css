@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Oswald:wght@300;500;700&display=swap');
+* {
+    margin: 0; /*distancia da margem para a tag*/
+    padding: 0; /*distancia da tag para o conteudo*/
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+/*************************************************
+*	Página de Projetos  *
+*************************************************/
+.corpo { 
+    background: linear-gradient(68.15deg, #4B4241 16.62%, #231918 85.61%);
+    color: #f3cfdd;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 3%; /* ajuste de margem no corpo da página*/
+    margin-right: 3%;
+    font-size: 100%;
+}
+
+.cabecalho-pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px;
+    border-bottom:0.1px solid #79635E;
+    gap:30px;
+}
+
+.menu-cabecalho{
+    display: flex;
+    padding:20px;
+}
+
+.item-menu-cabecalho{
+    color:#d6d0c2;
+    font-family: 'Oswald', sans-serif;
+    -webkit-transition: all 0.25s;
+    font-size: 24px;
+}
+
+.item-menu-cabecalho:hover{
+    color:#F39194;    
+    -webkit-transition: all 0.25s;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+.logo-cabecalho{
+    width: 90px;
+    border-radius:50px;
+}
+
+.conteudo-inicial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagem-projetos{
+    width: 15%;
+}
+
+.conteudo-imagem-icones{
+    width: 40px;
+}
+
+.conteudo-projetos{
+    margin-bottom: 48px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.conteudo-projetos-titulo{
+    color: #F2E3BC;
+    text-shadow: 2.5px 2.5px  #414535;
+    text-align: center;  
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    /*border-top:0.4px solid #96BBBB;*/
+    padding-top: 25px;
+    font-size: 40px;
+    margin-bottom: 16px;  
+}
+
+.conteudo-projetos-subtitulo{
+    font-size: 24px;
+    color: #d6d0c2;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2.5px 2.5px  #414535;
+    font-weight: 300;
+
+}
+
+.conteudo-projetos-imagem{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.conteudo-projeto1{
+    display: column;
+    width: 80%;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #F2E3BC;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.conteudo-projeto-titulo{
+    
+    color:#414535;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.conteudo-projeto-paragrafo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color:#414535;
+    padding: 5px;
+
+}
+
+.links-conteudo{
+    color:#B98C64;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: all 0.25s;
+    font-weight: 700;
+}
+
+.links-conteudo:hover{
+    color:#63462C;
+    -webkit-transition: all 0.25s;
+}
+
+.rodape{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #F39194;
+    margin-bottom: 20px;
+    margin-top:-10px
+
+}
