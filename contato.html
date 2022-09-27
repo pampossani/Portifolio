@@ -30,47 +30,46 @@
                 <a href="contato.html" class="active">Contato</a>
              </div>
        </div>
-       <div class="container" id="content" onclick="closeSidebar()" tabindex="0">
-        <h1 class="titulo-cabecalho">Contato</h1>
-    <div class="metade"> 
-        <!-- Metodo GET: dados são passados pela URL; POST dados são passados pela requisição-->
-        <form enctype="application/x-www-form-urlencoded" method="POST">
-            <label for="NomeCompleto">Nome:</label>
-            <input id="NomeCompleto" type="text" name="Nome_Completo" value="" placeholder="Digite seu nome completo" />
-            <br>
-            
-            <label for="Email">E-mail:</label>
-            <input id="Email" type="email" name="Email" value="" placeholder="seuemail@servidor.com.br" />
-            <br>
 
-            <label for="Assunto">Mensagem:</label>
-            <textarea name="Assunto"> </textarea>
-             <br>
-             <input type="submit" value="Enviar!" /><br>
-            
-             <br> 
+
+       <div class="formulario" id="content" onclick="closeSidebar()" tabindex="0">
+
+        <h1 class="titulo-cabecalho">Formulário</h1>
+        <form id="form" method="POST" action="email.php">
+            <div> 
+                <input type="text" name="name" class="inputs required" placeholder="Digite seu nome completo"  oninput="nameValidate()"/>
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div> 
+                <input type="email"  name="email" class="inputs required" placeholder="Digite seu melhor email" oninput="emailValidate()" />
+                <span class="span-required">Digite seu email válido</span>
+            </div>
+            <div> 
+                <textarea name="descricao" id="descricao" cols="25" rows="10" class="inputs" placeholder="Digite sua mensagem..."></textarea>
+            </div>
+             <input type="submit" name="enviar">Enviar</input>
         </form>
 
+    <div class="conteudo-principal-escrito"> 
+        
        <div class ="informacoes">
         <i>Informações de Contato</i><br>
         <b>Telefone:</b> (11) 3333-3333<br>
         <b>Redes Sociais:</b>  </br>
-        <a href="https://www.facebook.com/interruptedreamer" target="_blank" rel="noopener noreferrer">
-            <img src="./imagem/facebook.svg"></img></a> 
-            <a href="https://www.instagram.com/interruptedreamer/" target="_blank" rel="noopener noreferrer">
-                <img src="./imagem/instagram.svg"> </img></a> 
-                <a href="https://www.linkedin.com/in/p%C3%A2mela-possani-7929b16b/" target="_blank" rel="noopener noreferrer">
-                <img src="./imagem/linkedin.svg"> </img> </a>   </div>
-      </div>
+    </div>
       
-      </center>
-             <!-- /* botao de voltar para a pagina inicial*/ -->
-       <center><address>
-        Brasil, Jundiaí-SP<br>
-        13212-108<br>
-        Avenida Antonio Pincinato<br>
-      </address> </center>
-
+          <section class="icones-redes">
+                    <a href="https://github.com/pampossani" target="_blank" rel="noopener noreferrer">
+                        <img src="/imagem/github.svg" class="img-cabecalho-icone" alt="github"></a>
+                     <a href="https://www.linkedin.com/in/p%C3%A2mela-possani-7929b16b/" target="_blank" rel="noopener noreferrer">
+                        <img src="./imagem/linkedin.svg" class="img-cabecalho-icone" alt="linkedin"></a>
+                     <a href="https://www.facebook.com/interruptedreamer" target="_blank" rel="noopener noreferrer">
+                        <img src="./imagem/facebook.svg" class="img-cabecalho-icone"></a> 
+                        <a href="https://www.instagram.com/interruptedreamer/" target="_blank" rel="noopener noreferrer">
+                            <img src="./imagem/instagram.svg" class="img-cabecalho-icone"></a> 
+                    </section> 
+              
+            </div>
     </div>
 
       <footer>

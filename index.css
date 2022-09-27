@@ -34,6 +34,7 @@ body {
     background: linear-gradient(68.15deg, var(--color-brown3) 16.62%, var(--color-dark3) 85.61%);
     margin-left: 3%; /* ajuste de margem no corpo da página*/
     margin-right: 3%;
+  
 }
 
 .conteudo-principal{
@@ -239,42 +240,62 @@ h2{
 
 form {
     text-align: center; 
-    display: table-row;
-    line-height: 170%;
-    margin-top: 0.5em;
+    display: block;
+    margin-top: 1em;
 }
 
-label {
-    display: inline-block;
-    width: 100px;
-    text-align: right;
-    padding: 0 1em 0.4em 0.4em;
+.formulario{
+    background-color: var(--color-dark2);
+    padding: 2rem;
+    min-width: 30%;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
-input[type=text], input[type=email], textarea {
-     font: 1em sans-serif; /*tiramos a serifa do formulário também */
-     width: 250px;
-     font-size: 15px; /* tamanho da fonte*/
-     box-sizing:border-box;
-     border: 1px dotted #999; /*borda em volta das áreas*/
+.span-required{
+    display: none;
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: var(--color-brown1);
+    font-family: 'Montserrat',sans-serif;
 }
 
-textarea {
-    vertical-align: top;
-    height: 8em;
-    resize: vertical;
-    max-height: 14em;
+.inputs{
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    margin:10px;
+    background-color: var(--color-brown2);
+    border: 2px solid var(--color-brown2);
+    width: 70%;
+    color:var(--color-brown1);
+    box-sizing: border-box;
+    transition: .3s;
 }
 
-/*input[type=submit], .botao{ 
-       margin-left: 9em; 
-       padding-top:.1em;
-} 
+.inputs:focus{
+    border-color:var(--color-pink2);
+}
 
 
-input:focus, textarea:focus { focar áreas quando estiverem ativas
-    border-color: rgb(129, 14, 71);
-}*/
+input[type="submit"]  {
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    margin-top:1rem;
+    color:var(--color-gray2);
+    background-color: var(--color-pink4);
+    cursor:pointer;
+    transition: .3s;    }
+
+    input[type="submit"]:hover  {
+        background-color: var(--color-brown1); 
+      }
 
 
 .metade {
@@ -295,6 +316,8 @@ input:focus, textarea:focus { focar áreas quando estiverem ativas
 .informacoes {
     width: 300px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -398,8 +421,7 @@ footer p{
     }	
 
 
-
-    header img, input[type=submit]  {
+    header img {
         margin-left: 10px;
     }
 
