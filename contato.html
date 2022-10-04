@@ -35,7 +35,7 @@
        <div class="formulario" id="content" onclick="closeSidebar()" tabindex="0">
 
         <h1 class="titulo-cabecalho">Formulário</h1>
-        <form id="form" method="POST" action="email.php">
+        <form method="POST" action="mailto:pamelapossani13@gmail.com" enctype="text/plain">
             <div> 
                 <input type="text" name="name" class="inputs required" placeholder="Digite seu nome completo"  oninput="nameValidate()"/>
                 <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
@@ -47,7 +47,9 @@
             <div> 
                 <textarea name="descricao" id="descricao" cols="25" rows="10" class="inputs" placeholder="Digite sua mensagem..."></textarea>
             </div>
-             <input type="submit" name="enviar">Enviar</input>
+             <input type="submit" name="enviar" value="Enviar">
+
+             <input type="reset" value="Limpar" name="enviar">
         </form>
 
     <div class="conteudo-principal-escrito"> 
